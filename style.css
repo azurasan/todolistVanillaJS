@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding : 0 ;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container{
+	width: 500px;
+	border : 1px solid black;
+	color: #fff;
+}
+
+.container header{
+	padding: 1.5rem;
+	background-color: rgb(70,51,121);
+}
+
+.container main .inputBox{
+	display: flex;
+	padding: 2rem 1rem;
+}
+
+.container main .inputBox #input{
+	font-size: 1.2rem;
+	padding: 0 0.5rem;
+	flex: 1;
+}
+
+.container main .inputBox .btn-add{
+	background-color: rgb(74,178,97);
+	padding: 1rem 1.5rem;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+
+.container main .list-items .item{
+	display: flex;
+	justify-content: space-between;
+	background-color: #1f1f1f;
+	font-size: 1.3rem;
+}
+
+.container main .list-items .item .text-item{
+	padding: 0.7rem 1rem;
+}
+
+.container main .list-items .item .buttons{
+	display: flex;
+}
+
+.container main .list-items .item .buttons .checklist{
+	background-color: rgb(74,178,97);
+	padding: 0.5rem 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.container main .list-items .item .buttons .btn-close{
+	background-color: rgb(166,7,42);
+	padding: 0.7rem 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+
+.done{
+	text-decoration: line-through;
+}
+
+@media screen and (min-width: 360px) and (max-width: 599px) {
+	.container{
+		width: 95%;
+	}
+
+	.container main .inputBox{
+		display: flex;
+		padding: 1rem 0.5rem;
+	}
+
+	.container main .inputBox #input{
+	font-size: 1.1rem;
+	padding: 0 0.3rem;
+	flex: 1;
+	}
+
+	.container main .list-items .item{
+	font-size: 1.2rem;
+	}
+}
